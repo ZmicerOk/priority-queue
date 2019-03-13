@@ -8,7 +8,7 @@ class MaxHeap {
 
 	push(data, priority) {
 		var node = new Node(data, priority);
-		this.insertNode(node);
+		this.insertNode(data, priority);
 		this.shiftNodeUp(node);
 	}
 
@@ -33,11 +33,15 @@ class MaxHeap {
 	}
 
 	clear() {
+		var heap = new MaxHeap();
+		this.root=null;
 		
+		this.parentNodes = [];
 	}
 
 	insertNode(node) {
-		if (heap == 0){this.root=passed};
+		var node = new Node();
+		if (heap){this.root=passed};
 	}
 
 	shiftNodeUp(node) {
